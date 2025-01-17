@@ -1,0 +1,7 @@
+public int compareTo(Persona p){
+    if(p.getCognoms().compareTo(this.getCognoms())==0){
+        return p.getCognoms().compareTo(this.getCognoms());
+    } else{
+        return p.getCognoms().compareTo(this.getCognoms());
+    }
+}

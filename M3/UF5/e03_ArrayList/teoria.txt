@@ -1,0 +1,74 @@
+public class App{
+    public main blablabla{
+        List<String> llista = Arrays.list(1, 2, 3);
+        List<Integer> llista2 = List.of(1,2,3,4);
+        List<Producte> llista3 = List.of(new Producte("algo"), new Producte("algo"));
+
+        ArrayList<Integer> llista4 = new ArrayList<>();
+        llista4.add(10);
+        llista4.add(9);
+        llista4.addAll(List.of(8,7,6));
+
+        for(int n : llista4){
+            syso(n);
+        }
+
+        for(Iterator<Integer> it = llista5.iterator(); it.hasNext();){
+            int n = it.next();
+            if(n%10==0||n%5==0){
+                it.remove();
+            }
+        }
+
+        llista4.sort(); //con comparable
+
+        //llista --> sí se pueden repetir
+        //conjunt --> no se pueden repetir elementos
+        //Taula Hash. No hi ha ordre d'inserció. Permet un element null
+        Set<Alumne> set2 = new HashSet<>();
+
+        set2.add(new Alumne("12345", "Juan", "Pérez"));
+        set2.add(new Alumne("12345", "Aurelio", "Pérez"));
+        set2.add(new Alumne("12345", "Juan", "Pérez")); //no dejará hacer el add
+
+        //sí hi ha ordre d'inserccio. Permet un element null
+        Set<Alumne> set3 = new LinkedHashSet<>(set2);
+        
+        set3.add(new Alumne("12345", "Juan", "Pérez"));
+
+        //ordre natural. No permet nulls
+        TreeSet<Integer> set4 = new TreeSet<>();
+        Random r = new Random();
+        for(int i=0, i<10; i++){
+            set4.add(r.nextInt(100));
+        }
+
+        Map<Integer, String> map1 = Map.of(1, "Un", 2, "Dos", 3, "Tres");
+
+        //sense ordre. Permet una clau nula i valors nulls
+        Map<Integer,String> ma3 = new HashMap<>();
+        map3.put();
+
+
+        //
+
+    }
+}
+
+
+lista doble enlazada circular
+
+primer apunta al primer objeto creado
+
+primer --> obj1(dada, anterior, seguent)
+
+al añadir otro objeto, anterior y seguent de obj1 apuntan a este nuevo objeto
+
+obj1(dada:String, anterior:obj2, seguent:obj2);
+obj2(dada:String, anterior:obj1, seguent:obj1);
+
+si añadiera otro objeto más en orden de añadido sería:
+
+obj1(dada:String, anterior:obj3, seguent:obj2);
+obj2(dada:String, anterior:obj1, seguent:obj3);
+obj3(dada:String, anterior: obj2, seguent: obj1);

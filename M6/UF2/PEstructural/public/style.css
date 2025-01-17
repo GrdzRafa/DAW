@@ -1,0 +1,32 @@
+
+/* BASE */
+body{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CONTENIDOR DE FORMULARI */
+#formCont{
+    margin: 0;
+    width: 40%;
+    background-color: rgb(202, 183, 221);
+    padding: 20px;
+    border: solid 1px black;
+}
+
+
+
+/* FORMULARI */
+#form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: maroon;
+    padding-bottom: 5px;
+}
+
+#btnCont{
+    display: flex;
+}

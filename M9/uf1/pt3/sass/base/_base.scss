@@ -1,0 +1,71 @@
+body {
+    line-height: 1.6;
+    background-image: var(--slider-h2-bck-color);
+}
+
+#container, #contactus, #clients{
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 20px;
+}
+
+#container main, .slider{
+    background-color: white;
+}
+
+hr {
+    border: 1px solid var(--hr-color);
+    background-color: var(--hr-color);
+}
+
+#hr{
+    width: 100%;
+}
+span {
+    color: var(--orange);
+}
+
+#subrayado {
+    color: var(--text-nav);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav,
+#container main div p:last-of-type,
+#container main div button {
+    font-size: 12px;
+}
+
+#container main,
+#container h2, #contactus h3 {
+    font-family: var(--century-ghotic-txt);
+}
+
+#container main div p:last-of-type,
+.slider h5,
+.slider p,
+.slider a,
+#welcome p,
+#rrss form,
+footer, #contact p {
+    font-family: var(--arial-txt);
+}
+
+.tema {
+    font-family: icon;
+    height: 0px;
+    margin-left: 30px;
+    left: 0px;
+    margin-top: 30px;
+    scale: 2;
+}
+
+.icon-brightness-contrast:before {
+    font-family: Icomoon;
+    content: "\e9d6";
+  }

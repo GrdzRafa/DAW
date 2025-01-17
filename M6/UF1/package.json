@@ -1,0 +1,19 @@
+{
+  "name": "rafa",
+  "version": "1.0.0",
+  "main": "scriptProvaRafa.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "eslint": "^9.10.0",
+    "globals": "^15.9.0"
+  },
+  "dependencies": {
+    "@stylistic/eslint-plugin-js": "^2.8.0"
+  }
+}

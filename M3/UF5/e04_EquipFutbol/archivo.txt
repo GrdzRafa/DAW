@@ -1,0 +1,18 @@
+Equipo
+    +posiciones (3 porteros, 7 defensas, 7 mediocentros,
+    5 delanteros) con excepciones personalizadas si se supera el máximo
+    +dorsales
+    +trofeos de equipo
+    +coleccion de jugadores (max = 22)
+
+jugadores
+    +desde cuando juega a nivel profesional
+    + en qué equipos ha jugado
+    +salario
+    +trofeos individuales
+
+
+Hay que utilizar colecciones.
+
+En el main hacer un array que se llame "jugadoresLiga" o algo así
+y cada jugador añadirlo a un array de 

@@ -1,0 +1,163 @@
+#container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        "header header header header . . nav nav nav nav nav nav"
+        "main main main main main main main main main main main main"
+        "design design design design solutions solutions solutions solutions testimonials testimonials testimonials testimonials"
+        "welcome welcome welcome welcome welcome welcome welcome welcome rrss rrss rrss rrss"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+#contactus {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        "header header header header header nav nav nav nav nav nav nav"
+        "contact contact contact contact contact contact contact contact intch intch intch intch"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+#clients {
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 20px;
+
+    display: grid;
+    gap: 0px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        "header header header header . . nav nav nav nav nav nav"
+        "main main main main main main main main testsec testsec testsec testsec"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+#desplegable {
+    display: none;
+}
+
+nav{
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    #container {
+        margin: 0 auto;
+        width: 80%;
+        padding-top: 20px;
+
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+            "header header header header header header header header header header header header"
+            "nav nav nav nav nav nav nav nav nav nav nav nav"
+            "main main main main main main main main main main main main"
+            "design design design design design design solutions solutions solutions solutions solutions solutions"
+            "testimonials testimonials testimonials testimonials testimonials testimonials welcome welcome welcome welcome welcome welcome"
+            "rrss rrss rrss rrss rrss rrss rrss rrss rrss rrss rrss rrss"
+            "footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+
+    header {
+        text-align: center;
+    }
+
+    #rrss {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #contactus {
+        margin: 0 auto;
+        width: 80%;
+        padding-top: 20px;
+
+        gap: 0px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+            "header header header header header header header header header header header header"
+            "nav nav nav nav nav nav nav nav nav nav nav nav"
+            "contact contact contact contact contact contact contact contact intch intch intch intch"
+            "footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+    #desplegable {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    nav{
+        display: none;
+    }
+    #container {
+        margin: 0 auto;
+        width: 80%;
+        padding-top: 20px;
+
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "desp"
+            "nav"
+            "main"
+            "design"
+            "solutions"
+            "testimonials"
+            "welcome"
+            "rrss"
+            "footer";
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    #contactus {
+        margin: 0 auto;
+        width: 80%;
+        padding-top: 20px;
+
+        gap: 0px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "desp"
+            "nav"
+            "contact"
+            "intch"
+            "footer";
+    }
+
+    body#clients {
+        margin: 0 auto;
+        width: 80%;
+        padding-top: 20px;
+
+        gap: 0px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "desp"
+            "nav"
+            "main"
+            "testsec"
+            "footer";
+    }
+
+    #clients main{
+        flex-direction: column;
+    }
+
+    #desplegable {
+        display: block;
+        background-color: transparent;
+        scale: 2;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}

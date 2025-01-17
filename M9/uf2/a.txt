@@ -1,0 +1,17 @@
+el icono de las card es un icono propio de BS
+para utilizar el icono puedes utilizar una de las opciones de Install
+y aplicar la clase de css
+tiene que tener un hover el icono e compartir se hace con clases de BS
+se puede utilizar @extend de la clase del botón
+que hay en la misma card y añadir propiedades en caso que queramos
+
+
+
+
+Utilities para maxheight y para utilizar cualquier media query
+mx-lg-3
+mx-sm-2
+crear un map y haces un merge porque ya existe uno
+para cambiar el nombr que genera solo BS hay que añadir la 
+prpiedad class: <nombre>
+

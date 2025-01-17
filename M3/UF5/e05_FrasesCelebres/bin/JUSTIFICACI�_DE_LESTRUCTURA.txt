@@ -1,0 +1,13 @@
+*************JUSTIFICACIÓ DE LA JERARQUÍA DE CLASSES********
+He utilitzat aquesta jerarquía perque es la més marcada al analitzar el que es demana. 
+Fer que cada cosa tingui el seu lloca permet que les relacions siguin més fácils.
+I cada classe té els atributs justos i necessairs per facilitar la gestió i cerca.
+També es una estructura fácil d'expandir y adaptar si el codi XML, canvia (per exemple 
+si s'afegís una descripció a la frase o a l'autor).
+
+******* JUSTIFICACIÓ D'US DE STRINGBUILDER**********
+He utilitzat un StringBuilder al Handler perque amb SAX s'analitza de poc a poc
+tot l'XML. Si fos un String, cada concatenació d'string generaría més strings
+i aixó no afecta positivament al rendiment.
+Amb StringBuilder el que ens estalviem es de crear instancies de la classe String,
+ja que permet anar afegint text sense "reinstanciar" a String.

@@ -1,0 +1,45 @@
+public class Lista{
+    private class Element{
+        protected Object dada;
+        oritected Element segyent;
+
+        public Element (Object p){}
+
+    private Eelement primer;
+
+    public Llista(){
+        this.primer=null;
+    }
+
+    private void emptyList(){
+        this.primer = null;
+    }
+
+    public boolean isEmopty(){
+        return this.primer == null;
+    }
+
+    public int coutn(){
+
+        int numertoElements=0;
+        Eelement aux = this.primer;
+
+        while(aux!=null){
+            numertoElements++;
+            aux = aux.seguent;
+        }
+        return numertoElements;
+    }
+
+public void insertFirst(Object p){
+    Eelement nou = nre Element(p);
+    nou.seguent = this.primer;
+    this.primer = nou;
+}
+
+
+
+
+
+    }
+}

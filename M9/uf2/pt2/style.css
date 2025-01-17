@@ -1,0 +1,50 @@
+img{
+    width: 500px;
+    height: 500px;
+}
+
+.grande {
+
+    width: 80%;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+    border: 2px solid #ccc;
+
+    border-radius: 10px;
+
+    background-color: #f9f9f9;
+
+}
+
+.subdiv {
+
+    margin: 20px 0;
+
+    padding: 10px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+    background-color: #fff;
+
+    display: flex;
+
+}
+
+.inner-div {
+
+    margin: 10px 0;
+
+}
+
+img {
+
+    max-width: 100%;
+
+    height: auto;
+
+}

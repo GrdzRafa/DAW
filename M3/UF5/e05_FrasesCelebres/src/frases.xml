@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frasescelebres>
+  <autor url="/autores/armand-abecassis">
+    <nombre>Abécassis, Armand</nombre>
+    <descripcion>Profesor francés.</descripcion>
+    <frases>
+      <frase>
+        <texto>El ser humano tiene un pie en la tierra y un pie en el más allá, por sus exigencias, su imaginario, en una palabra, por su esperanza.</texto>
+        <tema>Esperanza</tema>
+      </frase>
+    </frases>
+  </autor>
+  <autor url="/autores/marcel-achard">
+    <nombre>Achard, Marcel</nombre>
+    <descripcion>Dramaturgo y guionista francés.</descripcion>
+    <frases>
+      <frase>
+        <texto>Para ser feliz en el amor uno deber saber, sin cegarse, cómo cerrar los ojos.</texto>
+        <tema>Amor</tema>
+      </frase>
+    </frases>
+  </autor>
+  <autor url="/autores/joseph-addison">
+    <nombre>Addison, Joseph</nombre>
+    <descripcion>Político, literato y autor dramático inglés.</descripcion>
+    <frases>
+      <frase>
+        <texto>Nada es más grato al espíritu del hombre que el poder de la dominación.</texto>
+        <tema>Filosofía</tema>
+      </frase>
+      <frase>
+        <texto>Un débil puede combatir, puede vencer; pero nunca puede perdonar.</texto>
+        <tema>Perdonar</tema>
+      </frase>
+      <frase>
+        <texto>En un hombre eminente es loca pretensión creer escapar de la censura, y debilidad el ser deprimido por ésta.</texto>
+        <tema>Censura</tema>
+      </frase>
+      <frase>
+        <texto>La caridad es una virtud del corazón y no de las manos.</texto>
+        <tema>Caridad</tema>
+      </frase>
+      <frase>
+        <texto>Un buen libro es un regalo precioso que hace el autor a la humanidad.</texto>
+        <tema>Libros</tema>
+      </frase>
+    </frases>
+  </autor>
+  <autor url="/autores/konrad-adenauer">
+    <nombre>Adenauer, Konrad</nombre>
+    <descripcion>Político Alemán.</descripcion>
+    <frases>
+      <frase>
+        <texto>Hay algo que Dios ha hecho mal. A todo le puso límites menos a la tontería.</texto>
+        <tema>Tontería</tema>
+      </frase>
+      <frase>
+        <texto>Caer no es peligroso ni vergonzoso, pero permanecer arrodillado es ambas cosas.</texto>
+        <tema>Caer</tema>
+      </frase>
+      <frase>
+        <texto>Todos vivimos bajo el mismo cielo, pero ninguno tiene el mismo horizonte.</texto>
+        <tema>Cielo</tema>
+      </frase>
+    </frases>
+  </autor>
+</frasescelebres>

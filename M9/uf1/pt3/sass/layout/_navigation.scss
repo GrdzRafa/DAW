@@ -1,0 +1,29 @@
+nav {
+    grid-area: nav;
+    align-items: center;
+    padding-top: 25px;
+}
+
+nav a{
+    color: var(--text-nav);
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+nav li:hover {
+    color: white;
+    padding: 5px 12px;
+    border-radius: 2px;
+    background-image: linear-gradient(0deg, #ef9f46 0%, #f3ab5b 50%, #f4cfa7 100%);
+    border: 1px solid #675f55;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+#desplegable{
+    grid-area: desp;
+}

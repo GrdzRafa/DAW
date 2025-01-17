@@ -1,0 +1,59 @@
+#rrss form {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+#rrss form label {
+    line-height: 18px;
+    color: var(--gris-2);
+    margin-bottom: 10px;
+}
+
+#rrss form button {
+    width: 91px;
+    height: 19px;
+    border-radius: 8px;
+    color: var(--main-bttn-txt-color);
+    background-image: var(--main-bttn-bck-color);
+    border: 1px solid #c6c6c6;
+    margin-top: 10px;
+}
+
+#contactus form {
+    width: 400px;
+    font-family: Arial, sans-serif;
+}
+
+#contactus form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+#contactus form label {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: var(--gris-2);
+}
+
+#contactus form input,
+#contactus form textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #eeefef;
+    border: 1px solid #dddddd;
+}
+
+#contactus form textarea {
+    resize: none;
+}
+
+#contact button {
+    width: 91px;
+    height: 24px;
+    border-radius: 11px;
+    background-image: var(--main-bttn-bck-color);
+    border: 1px solid #c6c6c6;
+}
