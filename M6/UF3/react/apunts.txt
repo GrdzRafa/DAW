@@ -13,3 +13,41 @@ data-id a cada producto
 al hacer clic al botón, 
 
 setCarreto(()==> [---carreto,article])
+_________________________________________________
+
+crear bbdd con script moodle
+
+cambiar el fetch de content, en vez de hacer fetch a json hacerlo 
+al php de cataleg
+
+useeffect 0 {
+    fetch (php cataleg)
+    post
+    json.stringfy(filtres) <--! 
+    .then response json
+    .then orids setDAta(prods)
+    .catch err => console.log
+}, [filtres]
+
+eventListener a los inputs de filtros:
+input on change query selector all input:type nosque:checked
+
+Utilizar data- para saber de qué tipo es cada input. Nos servirá
+para crear el objeto de filtros
+
+Para que se guarden los filtros cada vez que se renderice,
+utilizar useRef.
+
+const asideElems =useRef():
+
+<div ref=(asideElems) id="div contenedor input filtros">
+
+Podrías hacer un 
+asideElems.current.querySelectorAll(input type blablabla checked);
+
+Lo guardas en una variable dentro del listener onchange que hagas para
+cada input y luego iteras sobre lo guardado en asideElems y creas
+el objeto de filtros que luego pasaras en el fetch.
+
+Para saber a qué campo se relaciona cada dato del input, lo mejor
+es utilizar un data- que diga si es de model, emmagatzematge, etc.

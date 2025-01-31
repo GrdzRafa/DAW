@@ -1,0 +1,19 @@
+instalar misqli
+
+cd /etc/netplan
+nano 50-cloud-init.yaml
+cambiar IP a la misma que nuestra máquina +50
+
+por ejemplo: 192.168.103.6 --> poner esta = x.x.x.56
+ guardar salir
+ netplan apply
+cd /etc/mysql/mysql.conf.d
+nano mysqld.conf
+
+cambiar bind-address a 0.0.0.0
+cambiar mysqlx-bin-address a 0.0.0.0
+guardar salir
+
+mysql -u -root
+
+alter user 'root' etc

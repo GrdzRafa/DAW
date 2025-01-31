@@ -5,7 +5,6 @@ import  {ProductContext} from "../ProductContext/context";
 export default function Content() {
   const [productes, setProductes] = useState([]);
   const [data, setData] = useState();
-  // const [carreto, setCarreto] = useState([]);
   const {carreto, setCarreto} = useContext(ProductContext);
   
   useEffect(() => {

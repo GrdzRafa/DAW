@@ -16,3 +16,4 @@ Hay que utilizar colecciones.
 
 En el main hacer un array que se llame "jugadoresLiga" o algo así
 y cada jugador añadirlo a un array de 
+

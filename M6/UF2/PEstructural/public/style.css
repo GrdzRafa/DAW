@@ -8,10 +8,11 @@ body{
 /* CONTENIDOR DE FORMULARI */
 #formCont{
     margin: 0;
-    width: 40%;
+    /* width: 40%; */
     background-color: rgb(202, 183, 221);
     padding: 20px;
     border: solid 1px black;
+    flex: 1;
 }
 
 
@@ -30,3 +31,10 @@ label{
 #btnCont{
     display: flex;
 }
+
+/* CARD CONT */
+
+#cardCont{
+    flex: 1;
+}
+
