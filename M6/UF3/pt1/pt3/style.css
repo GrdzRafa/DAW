@@ -1,0 +1,17 @@
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    font-family: Arial, sans-serif;
+    color: green;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}

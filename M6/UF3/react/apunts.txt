@@ -1,0 +1,15 @@
+passing props to a component
+
+function Hola({hola, adios}) --> 
+
+proptypes
+
+
+1. Crear useState carretó a Content
+2. Posar lisener a la div que envolta tots els productes
+3. Crear funcio per afegir el producte al carretó
+
+data-id a cada producto
+al hacer clic al botón, 
+
+setCarreto(()==> [---carreto,article])
