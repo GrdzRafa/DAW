@@ -4,7 +4,7 @@ import styles from "./content.module.scss";
 import  {ProductContext} from "../ProductContext/context";
 export default function Content() {
   const [productes, setProductes] = useState([]);
-  const [data, setData] = useState();
+  // const [data, setData] = useState();
   const {carreto, setCarreto} = useContext(ProductContext);
   
   useEffect(() => {
@@ -23,17 +23,24 @@ export default function Content() {
       });      
   }, []);
 
-  const handleClic = (e) => {
+  const handleAddToCart = (e) => {
     e.stopPropagation();
     e.preventDefault();
-    var attr = e.target.getAttribute("data-id");
-    const product = productes.filter((producte) => producte.pid == attr);
-    
-    setCarreto(() => [...carreto, product]);
+    if (e.target.tagName == "BUTTON") {
+      const attr = e.target.getAttribute("data-id");
+      
+      const cartProd = carreto.find((producte) => producte.pid == attr);
+      
+      if (!cartProd) {
+        const product = productes.filter((producte) => producte.pid == attr);
+        product[0].quantitat = 1;
+        setCarreto(() => [...carreto, product[0]]);
+      }
+    }
   };
-  console.log(carreto);
+
   return (
-    <div id={styles.content} onClick={handleClic}>
+    <div id={styles.content} onClick={handleAddToCart}>
       {productes.map((producte) => <Product producte={producte} key={producte.pid}/>)}
     </div>  
   );
