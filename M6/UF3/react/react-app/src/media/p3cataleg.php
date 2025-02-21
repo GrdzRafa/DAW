@@ -1,5 +1,5 @@
 <?php
-// header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Origin: *');
 $q = json_decode(file_get_contents('php://input'), true);
   if ($q){
     $data = [];
@@ -22,7 +22,7 @@ $q = json_decode(file_get_contents('php://input'), true);
   }
   
   try {
-    $dbh = new PDO('mysql:host=10.0.50.20;dbname=cataleg;charset=utf8','dbadmin', 'Thos-2024');
+    $dbh = new PDO('mysql:host=localhost;dbname=cataleg;charset=utf8','root', 'Rafa2025@');
     $sth = $dbh->prepare($sql);
     $sth->execute($data);
     $result = $sth->fetchAll(PDO::FETCH_ASSOC);

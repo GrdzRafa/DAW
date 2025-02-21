@@ -1,3 +1,48 @@
-.d-none{
-    display: none;
+#cart {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.726);
+  z-index: 1000;
+  text-align: left;
+
+  table {
+    padding: 20px;
+    background: white;
+    max-height: 400px;
+    overflow-y: auto;
+    display: block;
+
+    td,
+    th {
+      padding: 10px;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    input[type="number"] {
+      width: 50px;
+    }
+  }
+
+  thead {
+    background-color: gray;
+  }
+
+  img {
+    width: 100px;
+  }
+
+  #cartFooter{
+    display: flex;
+    justify-content: space-between;
+
+    #cartBtns{
+      padding: 10px;
+    }
+    #preuTotal{
+      padding: 5px;
+      color: white;
+      font-weight: bold;
+    }
+  }
+
 }

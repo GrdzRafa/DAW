@@ -1,10 +1,5 @@
-// import { useState } from "react";
-
-export default function Product(producte) {
-  // console.log(producte);
-  // console.log(producte.marca);
-  // const [producte, setProductes] = useState([]);
-  // setProductes(products);
+import React from "react";
+function Product(producte) {
   return (
     <div className="producte" id={producte.producte.id} key={producte.producte.pid}>
           <img
@@ -32,11 +27,10 @@ export default function Product(producte) {
             <button data-id={producte.producte.pid} className="producte-enlace">
               Afegir al carretó
             </button>
-            
-            {/* <a href={producte.producte.href || '#'} className="producte-enlace">
-              Comprar
-            </a> */}
           </div>
     </div>
   );
 }
+
+const MemoizedProduct = React.memo(Product);
+export default MemoizedProduct

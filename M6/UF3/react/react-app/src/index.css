@@ -1,8 +1,9 @@
 @import './styles/base/reset.scss';
 @import './components/Content/content.module.scss';
 @import './components/Product/style.scss';
-@import './components/ProductContext/context.scss';
+@import './components/Contexts/context.scss';
 @import './components/Carreto/carreto.scss';
+@import './components/Buttons/button.scss';
 /* @import './styles/base/typography.scss'; */
 /* @import './styles/base/base.scss'; */
 /* @import './styles/layout/reset.scss'; */
