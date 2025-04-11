@@ -1,0 +1,76 @@
+#design {
+    grid-area: design;
+}
+
+#solutions {
+    grid-area: solutions;
+}
+
+#testimonials {
+    grid-area: testimonials;
+}
+
+#welcome {
+    grid-area: welcome;
+}
+
+#rrss {
+    grid-area: rrss;
+}
+
+/* SLIDERS */
+.slider {
+    padding: 1px;
+    border-radius: 10px;
+}
+
+.slider div {
+    padding: 10px;
+}
+
+.slider div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider h2 {
+    background-color: var(--gris-4);
+    color: var(--gris-1);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.slider div img {
+    float: left;
+    margin-top: 15px;
+}
+
+.slider div a {
+    float: right;
+}
+
+.slider h5 {
+    color: var(--text-nav);
+}
+
+.slider p {
+    color: var(--gris-2);
+}
+
+/* WELCOME */
+#welcome h2, #rrss h2 {
+    font-size: 22px;
+}
+
+#welcome p {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--gris-2);
+}
+
+/* RRSS */
+#rrss div:first-child{
+    margin-bottom: 50px;
+}

@@ -1,0 +1,124 @@
+#container main {
+    grid-area: main;
+    display: flex;
+}
+
+#imatge {
+    width: 100%;
+    height: 100%;
+    background-image: url('../media/ContentSlider.png');
+    background-repeat: no-repeat;
+}
+
+#container main div:nth-child(2) {
+    padding-left: 1em;
+}
+
+#container main div h1 {
+    font-size: 27px;
+    font-weight: normal;
+    color: var(--main-title-color);
+}
+
+#container main div p:first-of-type{
+    color: var(--gris-3);
+}
+
+#container main div p:last-of-type{
+    color: var(--gris-2);
+}
+
+#container main div button {
+    float: right;
+    border: 1px solid #c6c6c6;
+    width: 91px;
+    height: 24px;
+    border-radius: 11px;
+    color: var(--main-bttn-txt-color);
+    background-image: var(--main-bttn-bck-color);
+}
+
+/*   CLIENTS */
+
+#clientsIcon {
+    // grid-area: clientsIc;
+    display: flex;
+    font-size: 22px;
+}
+
+#clients-slide {
+    grid-area: main;
+}
+
+#clients-slide a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+#clients-slide p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #9a9b9c;
+    font-family: "Arial";
+}
+
+.client-card {
+    padding: 10px;
+    width: 220px;
+    display: inline-block;
+}
+
+.client-img1 {
+    background-image: url('../media/Design3edgeClient1.png');
+}
+
+.client-img2 {
+    background-image: url('../media/CSSStack.png');
+}
+
+.client-img3 {
+    background-image: url('../media/Techiepark.png');
+}
+
+.client-img1,
+.client-img2,
+.client-img3 {
+    width: 220px;
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+    border: 10px #e5e6e5 solid;
+    border-radius: 11px;
+}
+
+
+
+/* CONTACT US*/
+#contact {
+    grid-area: contact;
+}
+
+#contact h3 {
+    font-size: 22px;
+}
+
+#contact p{
+    color: var(--gris-2);
+}
+
+#contactTitle {
+    display: flex;
+    font-size: 30px;
+}
+
+#contactus a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666665;
+    font-weight: bold;
+    font-family: "Arial";
+}

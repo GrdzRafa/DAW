@@ -1,0 +1,8 @@
+He utilizado Set como colección al crear los objetos en el CSVReader para que no se repitan los valores.
+En los resultados de eleccionas es casi imposible que se repitan los valores a menos que sea por algún error, 
+así que por si acaso, utilizo también Set.
+También uso TreeSet para mostrar todos los objetos que tenga ordenados mediante un compare definido. TreeSet
+es un tipo de colección Set.
+
+Y para la gestión de errores, no he creado excepciones personalizadas, pero he rodeado todo de Try catch para que maneje
+los errores.

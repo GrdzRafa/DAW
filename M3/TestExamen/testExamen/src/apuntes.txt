@@ -1,0 +1,13 @@
+Un jugador no puede repetir equipo: porque si vuelve a jugar en su primer equipo, no ha pasado por dos equipos distintos.
+--> por lo que se podría usar HashSet(hashset es un tipo de colección donde no se puede repetir el valor).
+
+Habrá que utilizar los 3 tipos de colecciones:
+arrayList, HashSet y HashMap.
+
+Sobreescritura de métodos.
+
+Iteraciones con Iterator.
+Iterator<Objetc> it = this.nosque
+while(it.hasNext())
+
+addEventHandler --> action

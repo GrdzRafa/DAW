@@ -1,0 +1,314 @@
+// /*
+// 1. Donada una llista de colors recorre-la per:
+//  - Crea una nova llista amb els seus complementaris
+//  - Aplica el segon color de la llista a una classe
+
+// */
+
+// @use 'sass:color';
+// @use 'sass:list';
+// @use 'sass:math';
+// @use "sass:map";
+
+// $colors: cyan, magenta, yellow;
+
+// $colors2: (
+// );
+
+// @each $color in $colors {
+//     @debug $color, color.complement($color);
+//     $colors2: list.append($colors2, color.complement($color));
+// }
+
+// .second {
+//     color: list.nth($colors2, 2);
+// }
+
+// /*
+// 2. Crea un mixin amb tots els paràmetres per a crear 
+// sombres box-shadow i aplica'l a una classe.
+// */
+
+// @mixin boxShadow ($offsetX, $offsetY, $blurRadius, $color) {
+//     box-shadow: $offsetX, $offsetY, $blurRadius, $color;
+// }
+
+// .shadow {
+//     @include boxShadow(10px, 5px, 5px, list.nth($colors2, 2));
+// }
+
+// /* 3. Modifica el mixin del punt anterior perquè: */
+// @mixin boxShadow ($offsetX, $offsetY, $blurRadius) {
+//     box-shadow: $offsetX, $offsetY, $blurRadius, rgb(220, 220, 220, 0.5);
+// }
+
+// .shadow {
+//     @include boxShadow(10px, 5px, 5px);
+// }
+
+// /* 4.Crea un mixin que generi un gradient 
+// lineal entre dos colors i un angle donat*/
+
+
+// @mixin linear-gradient ($angle, $color1, $color2) {
+//     background: linear-gradient($angle, $color1, $color2);
+
+// }
+
+// $colors: cyan, magenta, yellow, red;
+
+// @each $color in $colors {
+//     $index: list.index($colors, $color);
+
+//     .gradient-#{$index} {
+//         @include linear-gradient(#{45*$index}, $color, color.adjust($color, $lightness: 20%));
+//     }
+// }
+
+// /* 5. A partir d'aquest map crea'n un altre amb els valors 
+// incrementats amb 0.4rem i fusiona'ls*/
+// $font-weights: (
+//     "regular": 1rem,
+//     "medium": 1.5rem,
+//     "large": 2rem
+// );
+
+// $font-weights2: (
+// );
+
+// @each $name, $valor in $font-weights {
+//     // @debug map.set($font-weights2, "#{$name}-plus", $valor+0.4);
+//     $font-weights2: map.merge($font-weights2, ("#{$name}-plus": $valor+0.4));
+// }
+
+// @debug $font-weights2;
+
+// $font-weights-merged: map.merge($font-weights, $font-weights2);
+// @debug $font-weights2;
+// @debug $font-weights-merged;
+
+// // 6. Crea un mixin que a partir d'un map.
+// // generi classes css per aplicar directament a l'HTML
+
+// $opacity : (property: opacity,
+//     class: op,
+//     values: (0: 0,
+//         25: .25,
+//         50: .5,
+//         75: .75,
+//         100: 1,
+//     ));
+
+// // Modifica el mixin anterior perquè se pugui indicar la utilitat de la propietat.
+
+// $font-size : (property: font-size,
+//     class: fs,
+//     unit: rem,
+//     values: ('xs': 0.4,
+//         'md': 0.625,
+//         'lg': 1.2,
+//         'xl': 1.8,
+//         'xxl': 2.5,
+//     ));
+
+// @mixin opacity($map) {
+//     $values : map.get($map, "values");
+//     $property : map.get($map , "property");
+
+//     @each $key, $value in $values {
+//         @if ($property =="opacity") {
+//             .op-#{$key} {
+//                 #{$property}: #{$value};
+//             }
+//         }
+
+//         @if ($property =="font-size") {
+//             .fs-#{$key} {
+//                 #{$property}: #{$value}rem;
+//             }
+//         }
+//     }
+// }
+
+// @include opacity($opacity);
+// @include opacity($font-size);
+
+// // 7. Crea una funció que se li passi com a paràmetres un color, 
+// //el percentatge (per aclarir en número negatiu, per enfosquir positiu) i 
+// //el límit de percentatge a aplicar, per defecte 90 que és el valor màxim. 
+// //El percentatge va des de -limit a +limit. Si es passa un 
+// //percentatge fora del rang anterior s'agafa el límit,
+// // ex. -100 -> -90; 120 -> 90
+
+// // La funció retorna un color que es pot aplicar a propietats css
+// @function color-scale($color, $percentage: 0, $limit: 90) {
+//   // Limitar el porcentaje al rango [-limit, +limit]
+//   @if $percentage > $limit {
+//     $percentage: $limit;
+//   } @else if $percentage < -$limit {
+//     $percentage: -$limit;
+//   }
+
+//   // Ajustar la luz del color
+//   @if $percentage > 0 {
+//     @return color.adjust($color, $lightness: $percentage * 1%);
+//   } @else {
+//     @return color.adjust($color, $lightness: $percentage * 1%);
+//   }
+// }
+
+// // 8. Crea una funcio que retorni un map que contingui una escala de colors. 
+// // Paràmetres: color, interval i límit de percentatge. 
+// // Utilitza la funció del punt anterior.
+
+// @function escala-colors($color, $interval, $limit) {
+//     $esc_colors: (
+//     );
+
+// @for $i from 1 through 5 {
+//     $esc_colors: map.merge($esc_colors, ("color-#{$i}": color-scale($color, $limit)));
+//     $limit: (
+//         $limit - $interval
+//     );
+// }
+
+// @return $esc_colors;
+// }
+
+// $colors: escala-colors(#FF0000, 10, 70);
+// @debug $colors;
+
+// // 9. Crea un mixin per generar classes a partir del map generat en
+// // el punt anterior, i la propietat passada
+// // com a paràmetre. Classes generades per al 
+// // color orange:
+// $colors: escala-colors(orange);
+
+// @mixin opacity($map) {
+//     $values : map.get($map, "values");
+//     $property : map.get($map , "property");
+
+//     @each $key, $value in $values {
+//         @if ($property =="opacity") {
+//             .op-#{$key} {
+//                 #{$property}: #{$value};
+//             }
+//         }
+
+//         @if ($property =="font-size") {
+//             .fs-#{$key} {
+//                 #{$property}: #{$value}rem;
+//             }
+//         }
+//     }
+// }
+
+/****************************************************************/
+
+// Aquí tienes 6 ejercicios adicionales relacionados con CSS y SASS para practicar conceptos similares en una hora:
+// Ejercicio 1: Generar clases para margenes escalonados
+
+//     Descripción: Crea una función SASS que tome como parámetros un valor base (baseMargin) y un multiplicador (step). La función debe retornar una lista 
+//de valores escalonados para márgenes.
+//     Mixin: Usa esta función para generar clases como .m-5, .m-10, .m-15, etc.
+//     Ejemplo:
+
+//     .m-5 {
+//       margin: 5px;
+//     }
+//     .m-10 {
+//       margin: 10px;
+//     }
+
+//     Parámetros: Permite ajustar el rango máximo del margen con un límite predeterminado.
+
+    @function marginScale($baseMargin, $step){
+        $valors: ();
+        
+        @for $i from 1 through $baseMargin{
+            $valors:append($valors, $baseMargin*$step);
+            $baseMargin: $baseMargin*$step;
+        }
+        
+        @return $valors;
+    }
+
+    @mixin generarMargin($valors){
+        @each $valor in $valors{
+            .m-#{$valor}{
+                margin-top: #{$valor}px;
+            }
+        }
+    }
+    $valors: marginScale(5, 5);
+    @debug $valors;
+
+    @include generarMargin($valors);
+
+// Ejercicio 2: Generar escalas de tamaños de fuente
+
+//     Descripción: Crea una función que genere una escala tipográfica con una base (baseFontSize) y un multiplicador.
+//     Resultado: El mixin debe generar clases como .fs-12, .fs-14, .fs-16, etc., ajustando los tamaños de fuente.
+//     Propiedad aplicable: font-size.
+//     Ejemplo:
+
+// .fs-12 {
+//   font-size: 12px;
+// }
+// .fs-16 {
+//   font-size: 16px;
+// }
+
+
+// Ejercicio 3: Generar una escala de opacidades
+
+//     Descripción: Diseña una función que tome un color base y un intervalo para generar una escala de opacidades (10%, 20%, ...).
+//     Mixin: Genera clases como .opacity10, .opacity20, ... hasta un máximo configurable.
+//     Ejemplo:
+
+//     .opacity10 {
+//       background-color: rgba(255, 165, 0, 0.1);
+//     }
+//     .opacity50 {
+//       background-color: rgba(255, 165, 0, 0.5);
+//     }
+
+// Ejercicio 4: Generar bordes personalizados
+
+//     Descripción: Crea una función que tome un grosor base (borderWidth) y un color base para generar bordes escalonados.
+//     Mixin: Genera clases como .border-1, .border-2, ..., aplicando diferentes grosores.
+//     Ejemplo:
+
+//     .border-1 {
+//       border: 1px solid #333;
+//     }
+//     .border-3 {
+//       border: 3px solid #333;
+//     }
+
+// Ejercicio 5: Escala de espaciados de padding
+
+//     Descripción: Diseña una función SASS que permita generar valores de padding escalonados basados en un valor inicial y un incremento.
+//     Mixin: Genera clases como .p-5, .p-10, ..., ajustando los valores de padding.
+//     Ejemplo:
+
+//     .p-5 {
+//       padding: 5px;
+//     }
+//     .p-10 {
+//       padding: 10px;
+//     }
+
+
+// Ejercicio 6: Generar gradientes dinámicos
+
+//     Descripción: Crea una función que tome dos colores base y un porcentaje de transición para generar un gradiente.
+//     Mixin: Genera clases como .gradient-10, .gradient-50, ... con variaciones del gradiente.
+//     Ejemplo:
+
+// .gradient-10 {
+//   background: linear-gradient(to right, #ff0000 10%, #0000ff 90%);
+// }
+// .gradient-50 {
+//   background: linear-gradient(to right, #ff0000 50%, #0000ff 50%);
+// }

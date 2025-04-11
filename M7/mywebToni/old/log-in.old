@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Thos i Codina - Desenvolupament web en entorn servidor</title>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+	<link rel="stylesheet" href="../css/style.css?v=1.1">
+</head>
+<body>
+	<main>
+		<nav class="main-menu">
+			<div><img style="width:100%;"class="logo" src="../images/logo.png" alt="" /></div>
+			<h1>DAW M07</h1>
+			<ul>
+				<li class="nav-item active"><b></b> <b></b> 
+					<a href="index.php"> 
+						<i class="fa fa-house nav-icon"></i> 
+						<span class="nav-text">Home</span>
+					</a>
+				</li>
+
+				<li class="nav-item"><b></b> <b></b> 
+					<a href="profile.php"> 
+						<i class="fa fa-user nav-icon"></i> 
+						<span class="nav-text">Profile</span>
+					</a>
+				</li>
+
+				<li class="nav-item"><b></b> <b></b> 
+					<a href="schedule2409.php"> 
+						<i class="fa fa-calendar-check nav-icon"></i> 
+						<span class="nav-text">Schedule</span>
+					</a>
+				</li>
+
+				<li class="nav-item"><b></b> <b></b> 
+					<a href="activities.php"> 
+						<i class="fa fa-person-running nav-icon"></i> 
+						<span class="nav-text">Activities</span>
+					</a>
+				</li>
+
+				<li class="nav-item"><b></b> <b></b> 
+					<a href="settings.php"> 
+						<i class="fa fa-sliders nav-icon"></i> 
+						<span class="nav-text">Settings</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<section class="content">
+			<div class="left-content">
+				<div class="activities">
+					<h1>Les meves activitats</h1>
+					<div class="activity-container">
+						<div class="image-container img-one">
+							<img src="../images/php.jpg" alt="introducció" />
+							<div class="overlay">
+								<h3>Introducció al php</h3>
+							</div>
+						</div>
+
+						<div class="image-container img-two">
+							<img src="../images/server.jpeg" alt="elements del llenguatge" />
+							<div class="overlay">
+								<h3>Elements del lleguatge</h3>
+							</div>
+						</div>
+
+						<div class="image-container img-three">
+							<img src="../images/poo.png" alt="p.o.o." />
+							<div class="overlay">
+								<h3>Programació orientada a objecte</h3>
+							</div>
+						</div>
+
+						<div class="image-container img-four">
+							<img src="../images/dessign.png" alt="patrons de disseny" />
+							<div class="overlay">
+								<h3>Patrons de disseny</h3>
+							</div>
+						</div>
+
+						<div class="image-container img-five">
+							<img src="../images/Static-vs-Dynamic-Web-Page.jpg"	alt="pàgines dinàmiques" />
+							<div class="overlay">
+								<h3>Pàgines dinàmiques</h3>
+							</div>
+						</div>
+
+						<div class="image-container img-six">
+							<img src="../images/bbdd.jpg" alt="persistència" />
+							<div class="overlay">
+								<h3>Persistència</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="left-bottom">
+					<div class="weekly-schedule">
+						<h1>Programació</h1>
+						<div class="calendar">
+							<div class="day-and-activity activity-one">
+								<div class="day">
+									<h1>UF1</h1>
+									<p>11/11/2024</p>
+								</div>
+								<div class="activity">
+									<h2>Desenvolupament web en entorn servidor</h2>
+								</div>
+								<a href="activities.php">
+									<button class="btn">Veure</button>
+								</a>
+							</div>
+
+							<div class="day-and-activity activity-two">
+								<div class="day">
+									<h1>UF2</h1>
+									<p>27/01/2025</p>
+								</div>
+								<div class="activity">
+									<h2>Generació dinàmica de pagines web</h2>
+								</div>
+								<a href="activitiesUF2.php">
+									<button class="btn">Veure</button>
+								</a>
+							</div>
+
+							<div class="day-and-activity activity-three">
+								<div class="day">
+									<h1>UF3</h1>
+									<p>11/03/2025</p>
+								</div>
+								<div class="activity">
+									<h2>Tècniques d’accés a dades</h2>
+								</div>
+								<a href="activitiesUF3.php">
+									<button class="btn">Veure</button>
+								</a>
+							</div>
+
+							<div class="day-and-activity activity-four">
+								<div class="day">
+									<h1>UF4</h1>
+									<p>31/05/2025</p>
+								</div>
+								<div class="activity">
+									<h2>Serveis web. Pàgines dinàmiques interactives. Webs Híbrids</h2>
+								</div>
+								<a href="activitiesUF4.php">
+									<button class="btn">Veure</button>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="personal-bests">
+						<h1>Pràctiques</h1>
+						<div class="personal-bests-container">
+							<div class="best-item box-one">
+								<p>Pràctiques inicials</p>
+								<img src="../images/practicas.png" alt="" />
+							</div>
+							<div class="best-item box-two">
+								<p>Formularis</p>
+								<img src="../images/form.png" alt="" />
+							</div>
+							<div class="best-item box-three">
+								<p>Idiomes</p>
+								<img src="../images/lang.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="right-content">
+				<div class="user-info">
+					<div class="icon-container">
+						<a href="idiomes.php">
+							<i class="fa fa-globe nav-icon"></i>
+						</a>
+						<a href="news_letter.php"> 
+							<i class="fa fa-bell nav-icon"></i>
+						</a>
+						<a href="contacta.php">	 
+							<i class="fa fa-message nav-icon"></i>
+						</a>
+						<a href="llibre_de_visites.php">
+							<i class="fa fa-book nav-icon"></i>
+						</a>						
+					</div>
+					
+					<h4>Accedeix</h4>
+					<a href="log-in.php">
+						<img src="../images/usuari-not-logged.png" alt="user" />
+					</a>
+				</div>
+
+				<div class="active-calories">
+					<h1 style="align-self: flex-start">Identifica't</h1>
+					<form action="" method="post">
+					<div class="log-in">
+						
+							<label for="mail">E-mail:  </label>
+							<input type="text" id="mail" value="" placeholder="entra l'email" />
+							<label for="password">Password:  </label>
+							<input type="password" id="password" value="" placeholder="entra la contrasenya" />
+							
+						
+					</div>
+					<input type="submit" value="Entra"/>
+							<input type="submit" value="Registre"/>
+					</form>
+				</div>
+
+				<div class="mobile-personal-bests">
+					<h1>Pràctiques</h1>
+					<div class="personal-bests-container">
+						<div class="best-item box-one">
+							<p>Pràctiques inicial</p>
+							<img src="../images/practica.png" alt="" />
+						</div>
+						<div class="best-item box-two">
+							<p>Formularis</p>
+							<img
+								src="../images/form.png" alt="" />
+						</div>
+						<div class="best-item box-three">
+							<p>Idiomes</p>
+							<img src="../images/lang.png" alt="" />
+						</div>
+					</div>
+				</div>
+
+				<div class="friends-activity">
+					<h1>Què estic fent en aquest moment</h1>
+					<div class="card-container">
+						<div class="card">
+							<div class="card-user-info">
+								<img src="../images/jo.jpg" alt="" />
+								<h2>Toni</h2>
+							</div>
+							<img class="card-img" src="../images/profe.jpg" alt="" />
+							<p>El meu objectiu principal és facilitar el vostre aprenentatge i desenvolupament. </p>
+						</div>
+
+						<div class="card card-two">
+							<div class="card-user-info">
+								<img src="../images/jo.jpg" alt="" />
+								<h2>Toni</h2>
+							</div>
+							<img class="card-img" src="../images/corr.jpg" alt="" />
+							<p>i ajudar-vos en el procés💪</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

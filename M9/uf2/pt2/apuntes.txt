@@ -1,0 +1,25 @@
+picture tag
+ - la que menos ocupe (avif)
+ - la siguiente que menos ocupe (webp)
+ - jpg
+
+ En función de los width de la tabla, se cargan las imágenes de cada medida.
+
+ c_scale, w_400
+
+<picture>
+    <source 
+    srcset="
+    src1/img.avif 400w,
+    src1/img.avif 600w,
+    src1/img.avif 1200w,
+    src1/img.avif 1800w"
+
+    sizes=
+        "(max-width: 600px) 100vw,
+        (min-width: 601px) and (max-width: 1200px) 50vw,
+        (min-width: 1201px) 33vw"
+    
+    type="image/avif"
+    />
+</picture>

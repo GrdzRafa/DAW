@@ -1,0 +1,11 @@
+Primera parte: 
+cargar el xml en bbdd
+
+municipi, partit politic, resultats
+
+subir un archivo xml con un explorador de archivos
+de ese xml creas los objetos de la estructura de clases
+y esos objetos los meto en bbdd
+
+Dará la opción de seleccionar un municipio y mostrará los resultados de los votos:
+partido politico / nombre /  votos / porcentaje de votos

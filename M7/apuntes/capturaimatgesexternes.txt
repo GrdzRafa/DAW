@@ -1,0 +1,51 @@
+<?php
+//ini_set('display_errors', 1);
+
+$ruta = "https://www.freepik.es/search?format=search&query=mar";
+$contingut = file_get_contents($ruta);
+
+$inici = 'data-image="';
+$final = '"';
+$pos = strpos($contingut,"<div class=",0);
+
+while (($posIni = strpos($contingut, $inici, $pos)) !== false){
+    $posIni += strlen($inici);
+    $posFin = strpos($contingut, $final, $posIni);
+    $img[] = substr($contingut, $posIni, $posFin-$posIni );
+    $pos = $posFin;
+}
+
+var_dump($img);
+
+
+$taula=0;
+$tamany=4;
+foreach ($img as $imatge) {
+    $td = "<td><img src='$imatge' width='200px' height='200px'></td>\n";
+    if ($taula % $tamany == 0) {
+        $tr .= "<tr>\n$td";
+    } elseif ($taula % $tamany == $tamany-1) {
+        $tr .= "$td</tr>\n";
+    } else {
+        $tr .= $td;
+    }
+    $taula ++;
+    
+}
+$htmlTaula = "<table align='center'>$tr</table>"
+
+?>
+
+
+
+<!DOCTYPE html>
+<html dir='ltr' lang='ca' xml:lang='ca'>
+<head>
+	<title>ThosiCodina M07 UF1 E05</title>
+</head>
+<body>
+	<?php
+        echo $htmlTaula;
+    ?>
+</body>
+</html> 

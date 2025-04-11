@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Exercici 3</title>
+  </head>
+  <body id="image">
+    <main>
+      <!-- Primera imagen optimizada con Thumbor -->
+      <div class="image-container">
+        <picture>
+          <!-- Format AVIF -->
+          <source
+            srcset="
+              http://localhost:8888/unsafe/filters:quality(80):format(avif)/https://stride.com.co/wp-content/uploads/2023/01/gabriel-heinzer-g5jpH62pwes-unsplash-scaled.jpg 764w,
+              http://localhost:8888/unsafe/filters:quality(80):format(avif)/https://stride.com.co/wp-content/uploads/2023/01/gabriel-heinzer-g5jpH62pwes-unsplash-scaled.jpg 512w,
+              http://localhost:8888/unsafe/filters:quality(80):format(avif)/https://stride.com.co/wp-content/uploads/2023/01/gabriel-heinzer-g5jpH62pwes-unsplash-scaled.jpg 420w,
+              http://localhost:8888/unsafe/filters:quality(80):format(avif)/https://stride.com.co/wp-content/uploads/2023/01/gabriel-heinzer-g5jpH62pwes-unsplash-scaled.jpg 1528w"
+            sizes="(max-width: 764px) 100vw, (min-width: 765px) and (max-width: 1024px) 50vw, (min-width: 1260px) 33vw"
+            type="image/avif"
+          />
+          <!-- Format WebP -->
+          <source
+            srcset="
+              http://localhost:8888/unsafe/filters:quality(80):format(webp)/https://stride.com.co/wp-content/uploads/2023/01/gabriel-heinzer-g5jpH62pwes-unsplash-scaled.jpg 764w,
+              http://localhost:8888/unsafe/filters:quality(80):format(webp)/https://stride.com.co/wp-content/uploads/2023/01/gabriel-heinzer-g5jpH62pwes-unsplash-scaled.jpg 512w,
+              http://localhost:8888/unsafe/filters:quality(80):format(webp)/https://stride.com.co/wp-content/uploads/2023/01/gabriel-heinzer-g5jpH62pwes-unsplash-scaled.jpg 420w,
+              http://localhost:8888/unsafe/filters:quality(80):format(webp)/https://stride.com.co/wp-content/uploads/2023/01/gabriel-heinzer-g5jpH62pwes-unsplash-scaled.jpg 1528w"
+            sizes="(max-width: 764px) 100vw, (min-width: 765px) and (max-width: 1024px) 50vw, (min-width: 1260px) 33vw"
+            type="image/webp"
+          />
+          <!-- Imatge de caiguda (JPG) -->
+          <img
+            loading="lazy"
+            src="http://localhost:8888/unsafe/filters:quality(80)/https://stride.com.co/wp-content/uploads/2023/01/gabriel-heinzer-g5jpH62pwes-unsplash-scaled.jpg"
+            alt="Waterfall in National Park"
+          />
+        </picture>
+      </div>
+
+      <!-- Segunda imagen optimizada con Thumbor -->
+      <div class="image-container">
+        <picture>
+          <!-- Format AVIF -->
+          <source
+            srcset="
+              http://localhost:8888/unsafe/filters:quality(80):format(avif)/https://media0.giphy.com/media/bGgsc5mWoryfgKBx1u/200w.gif?cid=6c09b952ctdovafitkce6mckulwv1x9tfdpghd3ungc9lmzs&ep=v1_gifs_search&rid=200w.gif&ct=g 764w,
+              http://localhost:8888/unsafe/filters:quality(80):format(avif)/https://media0.giphy.com/media/bGgsc5mWoryfgKBx1u/200w.gif?cid=6c09b952ctdovafitkce6mckulwv1x9tfdpghd3ungc9lmzs&ep=v1_gifs_search&rid=200w.gif&ct=g 512w,
+              http://localhost:8888/unsafe/filters:quality(80):format(avif)/https://media0.giphy.com/media/bGgsc5mWoryfgKBx1u/200w.gif?cid=6c09b952ctdovafitkce6mckulwv1x9tfdpghd3ungc9lmzs&ep=v1_gifs_search&rid=200w.gif&ct=g 420w,
+              http://localhost:8888/unsafe/filters:quality(80):format(avif)/https://media0.giphy.com/media/bGgsc5mWoryfgKBx1u/200w.gif?cid=6c09b952ctdovafitkce6mckulwv1x9tfdpghd3ungc9lmzs&ep=v1_gifs_search&rid=200w.gif&ct=g 1528w"
+            sizes="(max-width: 764px) 100vw, (min-width: 765px) and (max-width: 1024px) 50vw, (min-width: 1260px) 33vw"
+            type="image/avif"
+          />
+          <!-- Format WebP -->
+          <source
+            srcset="
+              http://localhost:8888/unsafe/filters:quality(80):format(webp)/https://media0.giphy.com/media/bGgsc5mWoryfgKBx1u/200w.gif?cid=6c09b952ctdovafitkce6mckulwv1x9tfdpghd3ungc9lmzs&ep=v1_gifs_search&rid=200w.gif&ct=g 764w,
+              http://localhost:8888/unsafe/filters:quality(80):format(webp)/https://media0.giphy.com/media/bGgsc5mWoryfgKBx1u/200w.gif?cid=6c09b952ctdovafitkce6mckulwv1x9tfdpghd3ungc9lmzs&ep=v1_gifs_search&rid=200w.gif&ct=g 512w,
+              http://localhost:8888/unsafe/filters:quality(80):format(webp)/https://media0.giphy.com/media/bGgsc5mWoryfgKBx1u/200w.gif?cid=6c09b952ctdovafitkce6mckulwv1x9tfdpghd3ungc9lmzs&ep=v1_gifs_search&rid=200w.gif&ct=g 420w,
+              http://localhost:8888/unsafe/filters:quality(80):format(webp)/https://media0.giphy.com/media/bGgsc5mWoryfgKBx1u/200w.gif?cid=6c09b952ctdovafitkce6mckulwv1x9tfdpghd3ungc9lmzs&ep=v1_gifs_search&rid=200w.gif&ct=g 1528w"
+            sizes="(max-width: 764px) 100vw, (min-width: 765px) and (max-width: 1024px) 50vw, (min-width: 1260px) 33vw"
+            type="image/webp"
+          />
+          <!-- Imatge de caiguda (JPG) -->
+          <img
+            loading="lazy"
+            src="http://localhost:8888/unsafe/filters:quality(80)/https://media0.giphy.com/media/bGgsc5mWoryfgKBx1u/200w.gif?cid=6c09b952ctdovafitkce6mckulwv1x9tfdpghd3ungc9lmzs&ep=v1_gifs_search&rid=200w.gif&ct=g"
+            alt="Bruce-Hulk"
+          />
+        </picture>
+      </div>
+
+      <!-- Tercera imagen optimizada con Thumbor -->
+      <div class="image-container">
+        <picture>
+          <!-- Format AVIF -->
+          <source
+            srcset="
+              http://localhost:8888/unsafe/filters:quality(80):format(avif)/https://sps-sport.com/img/cms/Blog/diferencias%20entre%20los%20balones%20de%20futbol%20sala%20y%20los%20de%20futbol%2011.jpg 764w,
+              http://localhost:8888/unsafe/filters:quality(80):format(avif)/https://sps-sport.com/img/cms/Blog/diferencias%20entre%20los%20balones%20de%20futbol%20sala%20y%20los%20de%20futbol%2011.jpg 512w,
+              http://localhost:8888/unsafe/filters:quality(80):format(avif)/https://sps-sport.com/img/cms/Blog/diferencias%20entre%20los%20balones%20de%20futbol%20sala%20y%20los%20de%20futbol%2011.jpg 420w,
+              http://localhost:8888/unsafe/filters:quality(80):format(avif)/https://sps-sport.com/img/cms/Blog/diferencias%20entre%20los%20balones%20de%20futbol%20sala%20y%20los%20de%20futbol%2011.jpg 1528w"
+            sizes="(max-width: 764px) 100vw, (min-width: 765px) and (max-width: 1024px) 50vw, (min-width: 1260px) 33vw"
+            type="image/avif"
+          />
+          <!-- Format WebP -->
+          <source
+            srcset="
+              http://localhost:8888/unsafe/filters:quality(80):format(webp)/https://sps-sport.com/img/cms/Blog/diferencias%20entre%20los%20balones%20de%20futbol%20sala%20y%20los%20de%20futbol%2011.jpg 764w,
+              http://localhost:8888/unsafe/filters:quality(80):format(webp)/https://sps-sport.com/img/cms/Blog/diferencias%20entre%20los%20balones%20de%20futbol%20sala%20y%20los%20de%20futbol%2011.jpg 512w,
+              http://localhost:8888/unsafe/filters:quality(80):format(webp)/https://sps-sport.com/img/cms/Blog/diferencias%20entre%20los%20balones%20de%20futbol%20sala%20y%20los%20de%20futbol%2011.jpg 420w,
+              http://localhost:8888/unsafe/filters:quality(80):format(webp)/https://sps-sport.com/img/cms/Blog/diferencias%20entre%20los%20balones%20de%20futbol%20sala%20y%20los%20de%20futbol%2011.jpg 1528w"
+            sizes="(max-width: 764px) 100vw, (min-width: 765px) and (max-width: 1024px) 50vw, (min-width: 1260px) 33vw"
+            type="image/webp"
+          />
+          <!-- Imatge de caiguda (JPG) -->
+          <img
+            loading="lazy"
+            src="http://localhost:8888/unsafe/filters:quality(80)/https://sps-sport.com/img/cms/Blog/diferencias%20entre%20los%20balones%20de%20futbol%20sala%20y%20los%20de%20futbol%2011.jpg"
+            alt="Nature"
+          />
+        </picture>
+      </div>
+    </main>
+  </body>
+</html>
+
+	

@@ -1,0 +1,13 @@
+{
+	"require" : {
+		"doctrine/orm" : "2.8"
+	},
+	"autoload": {
+		"psr-4": {
+			"Frases\\Entity\\" : "src/Frases"
+		}
+	},
+	"authors": [{
+		"name" : "Rafa"
+	}]
+}

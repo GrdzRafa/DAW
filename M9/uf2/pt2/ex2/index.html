@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grande">
+        <h1>COMPARACIÓ 1</h1>
+        <div class="subdiv">
+            <div class="inner-div">
+                <p>GIF</p>
+                <img src="https://res.cloudinary.com/dkbenw1zq/image/upload/v1737471365/myGIF_ieaxox.gif" alt="">
+                <p>41 KB</p>
+            </div>
+            <div class="inner-div">
+                <p>MP4</p>
+                <video autoplay loop src="https://res.cloudinary.com/dkbenw1zq/image/upload/v1737471365/myGIF_ieaxox.mp4" alt="">
+                <p>6.73 KB</p>
+            </div>
+            <div class="inner-div">
+                <p>WEBM</p>
+                <video autoplay loop src="https://res.cloudinary.com/dkbenw1zq/image/upload/v1737471365/myGIF_ieaxox.webm" alt="">
+                <p>5.62 KB</p>
+            </div>
+        </div>
+        <h1>COMPARACIÓ 2</h1>
+        <div class="subdiv">
+            <div class="inner-div">
+                <p>GIF</p>
+                <img src="https://res.cloudinary.com/dkbenw1zq/image/upload/v1737471365/myGIF_ieaxox.gif" alt="">
+                <p>41 KB</p>
+            </div>
+            <div class="inner-div">
+                <p>WEBP</p>
+                <img src="https://res.cloudinary.com/dkbenw1zq/image/upload/v1737471365/myGIF_ieaxox.webp" alt="">
+                <p>6.93 KB</p>
+            </div>
+            <div class="inner-div">
+                <p>AVIF</p>
+                <img src="https://res.cloudinary.com/dkbenw1zq/image/upload/v1737471365/myGIF_ieaxox.avif" alt="">
+                <p>4.52 KB</p>
+            </div>
+        </div>
+        <h1>Etiqueta picture</h1>
+        <div class="subdiv">
+            <picture>
+                <source srcset="https://res.cloudinary.com/dkbenw1zq/image/upload/v1737471365/myGIF_ieaxox.avif" type="image/avif">
+                <source srcset="https://res.cloudinary.com/dkbenw1zq/image/upload/v1737471365/myGIF_ieaxox.webp" type="image/webp">
+                <img src="https://res.cloudinary.com/dkbenw1zq/image/upload/v1737471365/myGIF_ieaxox.gif" alt="Descripción de la imagen">
+            </picture>
+        </div>
+        <h1>Etiqueta video</h1>
+        <video controls>
+            <source src="https://res.cloudinary.com/dkbenw1zq/image/upload/v1737471365/myGIF_ieaxox.webm" type="video/webm">
+            <source src="https://res.cloudinary.com/dkbenw1zq/image/upload/v1737471365/myGIF_ieaxox.mp4" type="video/mp4">
+            <img src="https://res.cloudinary.com/dkbenw1zq/image/upload/v1737471365/myGIF_ieaxox.gif" alt="Descripción del vídeo" style="width: 100%; height: auto;">
+        </video>
+    </div>
+</body>
+
+</html>

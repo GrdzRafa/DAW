@@ -1,0 +1,11 @@
+**1. Indica les funcionalitats que proporciona Thumbor**
+
+Thumbor és un servei d'imatges intel·ligents. Permet retallar, 
+canviar la mida i girar les imatges sota demanda. 
+Compta amb una detecció molt intel·ligent de punts importants de la imatge 
+per a un millor retall i redimensionament, 
+utilitzant algorismes de detecció de cares i funcions d'última generació 
+(més informació a Algoritmes de detecció).
+
+**2. Instal·la Thumbor documentant el procés que has seguit**
+

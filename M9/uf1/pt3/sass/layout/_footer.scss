@@ -1,0 +1,14 @@
+footer, footer a {
+    grid-area: footer;
+    color: var(--gris-5);
+    font-size: 12px;
+}
+
+footer, footer ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul{
+    width: 50%;
+}

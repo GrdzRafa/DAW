@@ -1,0 +1,47 @@
+instalar misqli
+
+cd /etc/netplan
+nano 50-cloud-init.yaml
+cambiar IP a la misma que nuestra máquina +50
+
+por ejemplo: 192.168.103.6 --> poner esta = x.x.x.56
+ guardar salir
+ netplan apply
+____________________________________________________
+instalar:
+mysql-server
+phpmyadmin
+
+mysql -u root	
+
+En mysql->
+alter user 'roo'@'localhost' identified by '1234';
+
+flush privileges
+
+create user 'rafa'@'%' identified by '1234';
+gran all privileges on *.* to 'rafa'@'%' with grant option;
+exit
+
+------------------------------------
+cd /etc/mysql/mysql.conf.d
+nano mysqld.conf
+
+cambiar bind-address a 0.0.0.0
+cambiar mysqlx-bin-address a 0.0.0.0
+guardar salir
+
+systemctl restart mysql apache2
+--------------------------------------
+
+mysql drivers -> busqueda google
+JDDBC -> download
+Operating system _> plataform independent
+___________________________________
+Entrar en phpmyadmin y crear una tabla 'user'.
+Crear una tabla -> 'usuaris' y 3 número de columnas- 
+Crear un campo ID INT. índice Primary + A.I (autoincrement)
+Crear campo NOM varchar
+Crear campo PWD varchar
+
+Meter unos cuántos registros.

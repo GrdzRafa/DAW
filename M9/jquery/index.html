@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backlog</title>
+  <!-- <script src="jquery-3.7.1.js"></script> -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="kanban.html">Tauler Kanban</a>
+    </nav>
+  </header>
+  <div id="backlog">
+    <h1>Sprints:</h1>
+    <div class="tasks-contain ui-widget">
+      <table id="sprints" class="ui-widget ui-widget-content sortable">
+        <thead class="not-sortable">
+          <tr class="ui-widget-header">
+            <th>Tasca</th>
+            <th>Tipus</th>
+            <th>Data inici</th>
+            <th>Data fi</th>
+          </tr>
+        </thead>
+        <tbody class="sortable1 connectedSortable">
+        </tbody>
+      </table>
+    </div>
+    <div class="tasks-contain ui-widget">
+      <h1>Backlog:</h1>
+      <table id="tasks" class="ui-widget ui-widget-content sortable">
+        <thead class="not-sortable">
+          <tr class="ui-widget-header">
+            <th>Tasca</th>
+            <th>Tipus</th>
+            <th>Data inici</th>
+            <th>Data fi</th>
+          </tr>
+        </thead>
+        <tbody id="sortable2" class="connectedSortable">
+        </tbody>
+      </table>
+    </div>
+
+    <div id="trash" class="ui-widget-content ui-state-default">
+      <h4 class="ui-widget-header"><span class="ui-icon ui-icon-trash">Trash</span> Trash</h4>
+    </div>
+
+    <button id="create-task">Afegir una tasca</button>
+  </div>
+
+  <div id="dialog-form" title="Crea una tasca nova">
+    <p class="validateTips">Tots els camps son obligatoris.</p>
+    <form>
+      <fieldset>
+        <label for="tasca">Tasca</label>
+        <input type="text" name="tasca" id="tasca" class="text ui-widget-content ui-corner-all">
+        <label for="tipus">Tipus</label>
+        <input type="text" name="tipus" id="tipus" class="text ui-widget-content ui-corner-all">
+        <label for="data-ini">Data inici</label>
+        <input type="text" id="data-ini" class="text ui-widget-content ui-corner-all datepicker">
+        <label for="data-fi">Data fi</label>
+        <input type="text" id="data-fi" class="text ui-widget-content ui-corner-all datepicker">
+        <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+      </fieldset>
+    </form>
+  </div>
+
+</body>
+
+</html>

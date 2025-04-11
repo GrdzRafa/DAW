@@ -1,0 +1,68 @@
+/* CLIENTS */
+#testimonials-section {
+    width: 300px;
+    margin-left: 20px;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: "Arial";
+    grid-area: testsec;
+    margin-top: 32px;
+}
+
+#testimonials-section h3 {
+    font-size: 30px;
+    color: var(--orange);
+}
+
+#testimonials-section p {
+    color: #9a9b9c;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+#testimonials-section a {
+    color: #666665;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* CONTACT US*/
+#inTouch {
+    grid-area: intch;
+}
+
+#inTouch h3 {
+    font-size: 19px;
+    font-family: var(--century-ghotic-txt);
+}
+
+#inTouch ul {
+    list-style-type: disc;
+    font-size: 12px;
+    color: #666665;
+    font-family: var(--arial-txt);
+}
+
+#inTouch ul li::marker {
+    color: var(--orange);
+}
+
+aside p:first-of-type {
+    color: var(--gris-2);
+    font-family: var(--arial-txt);
+    font-size: 12px;
+}
+
+aside p:last-child {
+    font-size: 12px;
+    color: #666665;
+    font-weight: bold;
+    font-family: var(--arial-txt);
+}
+
+#followrrss div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+
+}

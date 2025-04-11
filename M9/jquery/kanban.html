@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Backlog</a>
+        </nav>
+    </header>
+    <div id="kanban">
+        <div>
+            <h1>Per fer:</h1>
+            <div>
+                <table class="sortable">
+                    <thead>
+                        <tr>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="sortable1 connectedSortable">
+                    </tbody>
+                </table>
+                </table>
+            </div>
+        </div>
+        <div>
+            <h1>En curs:</h1>
+            <div>
+                <table class="sortable">
+                    <thead>
+                        <tr>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="sortable3" class="connectedSortable">
+                    </tbody>
+                </table>
+                </table>
+            </div>
+        </div>
+        <div>
+            <h1>Finalitzat:</h1>
+            <div>
+                <table class="sortable">
+                    <thead>
+                        <tr>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="sortable4" class="connectedSortable">
+                    </tbody>
+                </table>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
